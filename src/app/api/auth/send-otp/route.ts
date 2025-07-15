@@ -15,7 +15,7 @@ export async function POST(req: Request) {
       email: phoneOrEmail,
       options: {
         shouldCreateUser: true,
-        emailRedirectTo: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/auth/callback`,
+        emailRedirectTo: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://gemini-clone-2-0-seven.vercel.app'}/auth/callback`,
         data: {
           redirect_to: '/dashboard'
         }
